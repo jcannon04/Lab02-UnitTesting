@@ -23,4 +23,7 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Lab02-UnitTesting\Lab02-ATM.csproj" />
+  </ItemGroup>
 </Project>
