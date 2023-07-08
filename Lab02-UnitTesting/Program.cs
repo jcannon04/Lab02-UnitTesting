@@ -42,10 +42,10 @@
         {
             string userInput = "";
 
+            Console.WriteLine("Welcome to the ATM");
             while (userInput != "exit")
             {
-
-                Console.WriteLine("Welcome to the ATM, please select from the following:\n\nwithdraw, deposit, view balance or type exit to quit\n");
+                Console.WriteLine("\nPlease select from the following: withdraw, deposit, view balance or type exit to quit");
                 userInput = Console.ReadLine();
 
                 decimal amount;
@@ -61,7 +61,7 @@
                         break;
 
                     case "deposit":
-                        Console.WriteLine("How much would you like to withdraw?");
+                        Console.WriteLine("How much would you like to deposit?");
                         amount = Convert.ToDecimal(Console.ReadLine());
                         newBalance = Deposit(amount);
                         Console.WriteLine($"Deposit successful! You deposited ${amount}, and your new balance is {newBalance}");
@@ -76,6 +76,7 @@
 
                 }
             }
+            Console.WriteLine("\nThanks for banking with us. See you soon!");
         }
 
         static void Main()
